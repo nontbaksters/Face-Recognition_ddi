@@ -6,4 +6,4 @@ streamlit==1.30.0
 tf-keras
 tensorflow==2.12
 opencv-python-headless==4.8.0.74
-gdown
+gdown==4.6.0
