@@ -5,5 +5,5 @@ omegaconf==2.3.0
 streamlit==1.30.0
 tf-keras
 tensorflow==2.12
-gdown
+gdown==5.2.0
 opencv-python-headless==4.8.0.74
