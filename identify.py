@@ -20,7 +20,7 @@ def faceRecognition(input_image):
     cropped_objects_dir = "./faces/"
     
     # Path to the directory to save unknown faces
-    unknown_faces_dir = "./unknown/"
+    unknown_faces_dir = "/workspaces/Face-Recognition_ddi/unknown"
     
     # Path to the directory to save known faces
     known_faces_dir = "./known/"
@@ -54,7 +54,7 @@ def faceRecognition(input_image):
     
     # Iterate through the image files in the directory
     for filename in os.listdir(cropped_objects_dir):
-        if filename.lower().endswith((".jpg", ".jpeg", ".png")):
+        if filename.lower().endswith((".jpg", ".jpeg")):
             img_path = os.path.join(cropped_objects_dir, filename)
             model = DeepFace.find(img_path=img_path, db_path="database", enforce_detection=False, model_name="Facenet512")
 

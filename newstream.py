@@ -43,7 +43,7 @@ def main():
     # Section to upload a picture to the database
     st.subheader("Upload a Picture to the Database")
     person_name = st.text_input("Enter the name of the person:")
-    database_uploaded_file = st.file_uploader("Choose a picture to upload to the database...", type=["jpg", "jpeg", "png"], key="db_upload")
+    database_uploaded_file = st.file_uploader("Choose a picture to upload to the database...", type=["jpg", "jpeg"], key="db_upload")
 
     if person_name and database_uploaded_file:
         folder_name = os.path.join("database", person_name)
@@ -54,7 +54,7 @@ def main():
 
     # Section to upload an image for face recognition
     st.subheader("Face Recognition")
-    uploaded_file = st.file_uploader("Choose an image to analyze...", type=["jpg", "jpeg", "png"], key="analyze_upload")
+    uploaded_file = st.file_uploader("Choose an image to analyze...", type=["jpg", "jpeg"], key="analyze_upload")
 
     if uploaded_file is not None:
         image_placeholder = st.empty()
