@@ -16,7 +16,6 @@ def faceRecognition(input_image):
     global totalKnownFaces
     global totalUnknownFaces
 
-
     # Path to the directory containing cropped objects
     cropped_objects_dir = "./faces/"
     
@@ -137,7 +136,6 @@ def faceExtraction(input_image, model, results):
         totalFaces+=1
         
     return totalFaces
-
 
 
 def faceDetection(uploaded_file):
