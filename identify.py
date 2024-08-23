@@ -20,7 +20,7 @@ def faceRecognition(input_image):
     cropped_objects_dir = "./faces/"
     
     # Path to the directory to save unknown faces
-    unknown_faces_dir = "/workspaces/Face-Recognition_ddi/unknown"
+    unknown_faces_dir = "./unknown/"
     
     # Path to the directory to save known faces
     known_faces_dir = "./known/"
