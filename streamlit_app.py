@@ -4,10 +4,10 @@ from identify import *
 from io import BytesIO
 
 
-st.set_page_config(page_title="AI For Business Workshop", page_icon=":smiley:")
+st.set_page_config(page_title="Face Recognition App", page_icon=":smiley:")
 
 def main():
-    st.title("AI For Business Workshop")
+    st.title("Face Recognition App")
     sample_image_path = "./sample_image.jpg"
     sample_image = Image.open(sample_image_path)
 

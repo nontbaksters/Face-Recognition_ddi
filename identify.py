@@ -6,7 +6,6 @@ from deepface import DeepFace
 from PIL import Image
 import shutil
 import os
-import pickle
 
 totalKnownFaces=0
 totalUnknownFaces=0
@@ -16,7 +15,6 @@ def faceRecognition(input_image):
 
     global totalKnownFaces
     global totalUnknownFaces
-    
 
     # Path to the directory containing cropped objects
     cropped_objects_dir = "./faces/"
